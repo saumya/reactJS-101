@@ -19,3 +19,6 @@ React.render( React.createElement(Component1), document.getElementById("myReactA
 */
 // Using the ComponentFactory
 React.render( Component1Factory(), document.getElementById("myReactApp") );
+
+// Other components are moved to other file components.js
+React.render( React.createElement(Component2,{greet:"Hello"}), document.getElementById("myReactApp") );
