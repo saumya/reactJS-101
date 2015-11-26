@@ -26,3 +26,14 @@ React.render( Component1Factory(), document.getElementById("myReactApp") );
 //React.render( Component2Factory(), document.getElementById("myReactApp") );
 
 React.render( React.createElement(Component3,{greet:"Hello 3"}), document.getElementById("myReactApp") );
+// Using JSX , now uses Babel browser.js as the JSX JS is deprecated
+/*
+<script type="text/jsx">
+  React.render(
+    <h1 id="my-heading">
+      <span><em>Hell</em>o</span> world!
+    </h1>,
+    document.getElementById('myReactApp')
+  );
+</script>
+*/
