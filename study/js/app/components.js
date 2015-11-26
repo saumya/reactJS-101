@@ -6,7 +6,7 @@ var Component2 = React.createClass({
   }
 });
 //var Component2Factory = React.createFactory(Component2,{greet:"Hello World"});
-
+// propTypes : write this in console : Object.keys(React.PropTypes).join('\n');
 var Component3 = React.createClass({
   propTypes:{
     greet: React.PropTypes.string.isRequired
