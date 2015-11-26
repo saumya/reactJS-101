@@ -20,15 +20,16 @@
 
     <script type="text/babel">
       React.render(
-        <h1 id="my-heading">
+        <div id="my-heading">
+          <h3>React 0.14.x </h3>
           {
             (function(){
               console.log('Javascript inside JSX !');
               console.log('This is interesting.');
             })()
           }
-          <span><em>Babel</em> in Browser,</span> JSX is deprecated !
-        </h1>,
+          <h1><span><em>Babel</em> in-Browser Compiler.</span></h1> <h2>JSX Compiler is deprecated !</h2>
+        </div>,
         document.getElementById('myReactApp')
       );
     </script>
