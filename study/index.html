@@ -21,6 +21,12 @@
     <script type="text/babel">
       React.render(
         <h1 id="my-heading">
+          {
+            (function(){
+              console.log('Javascript inside JSX !');
+              console.log('This is interesting.');
+            })()
+          }
           <span><em>Babel</em> in Browser,</span> JSX is deprecated !
         </h1>,
         document.getElementById('myReactApp')
