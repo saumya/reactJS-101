@@ -17,5 +17,15 @@
     <!-- my app -->
     <script src="js/app/components.js" charset="utf-8"></script>
     <script src="js/app/app.js" charset="utf-8"></script>
+
+    <script type="text/babel">
+      React.render(
+        <h1 id="my-heading">
+          <span><em>Babel</em> in Browser,</span> JSX is deprecated !
+        </h1>,
+        document.getElementById('myReactApp')
+      );
+    </script>
+
   </body>
 </html>
