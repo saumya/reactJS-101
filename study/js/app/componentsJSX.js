@@ -10,7 +10,7 @@ var JSXComp2 = React.createClass({
   }
 });
 // Using JSX components
-React.render(
+ReactDOM.render(
   <JSXComp2 />,
   //React.createElement(JSXComp2),
   document.getElementById("myReactApp")
