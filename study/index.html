@@ -16,8 +16,9 @@
     <script src="js/lib/babel/browser.js" charset="utf-8"></script>
     <!-- my app -->
     <script src="js/app/components.js" charset="utf-8"></script>
+    <script src="js/app/componentsJSX.js" charset="utf-8" type="text/babel"></script>
     <script src="js/app/app.js" charset="utf-8"></script>
-
+<!--
     <script type="text/babel">
       React.render(
         <div id="my-heading">
@@ -33,6 +34,22 @@
         document.getElementById('myReactApp')
       );
     </script>
-
+-->
+  <script type="text/babel">
+    var JSXComp1 = React.createClass({
+      render:function(){
+        var ReactComponent =  <div>
+                                <h1>JSX Component</h1>
+                                <h3>JSXComp1</h3>
+                              </div>;
+        return ReactComponent;
+      }
+    });
+    React.render(
+      //<JSXComp1 />,
+      React.createElement(JSXComp1),
+      document.getElementById("myReactApp")
+    );
+  </script>
   </body>
 </html>

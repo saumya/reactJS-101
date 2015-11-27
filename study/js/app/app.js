@@ -28,7 +28,7 @@ React.render( Component1Factory(), document.getElementById("myReactApp") );
 React.render( React.createElement(Component3,{greet:"Hello 3"}), document.getElementById("myReactApp") );
 // Using JSX , now uses Babel browser.js as the JSX JS is deprecated
 /*
-// old JSX
+// old JSX, type="text/jsx"
 <script type="text/jsx">
   React.render(
     <h1 id="my-heading">
@@ -37,7 +37,7 @@ React.render( React.createElement(Component3,{greet:"Hello 3"}), document.getEle
     document.getElementById('myReactApp')
   );
 </script>
-// now Babel
+// now Babel, type="text/babel"
 <script type="text/babel">
   React.render(
     <h1 id="my-heading">
@@ -47,3 +47,4 @@ React.render( React.createElement(Component3,{greet:"Hello 3"}), document.getEle
   );
 </script>
 */
+// Using JSX Components
