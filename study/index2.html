@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React!</title>
+  </head>
+  <body>
+    <div id="myReactApp">
+      <!-- React Application -->
+    </div>
+    <!-- React library -->
+    <script src="js/lib/react/react.js" charset="utf-8"></script>
+    <script src="js/lib/react/react-dom.js" charset="utf-8"></script>
+    <!-- Application Code -->
+    <script type="text/javascript">
+		var Component1 = React.createClass({
+								render: function(){
+								var reactComponent = React.DOM.span(null,"I am a Custom Span.");
+								return reactComponent;
+								}
+							});
+    	ReactDOM.render( React.createElement(Component1), document.getElementById("myReactApp") );
+    </script>
+  </body>
+</html>
